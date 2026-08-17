@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+
+    <vType
+        id="car"
+        vClass="passenger"
+        accel="2.6"
+        decel="4.5"
+        sigma="0.5"
+        length="5"
+        minGap="2.5"
+        maxSpeed="13.9"
+        guiShape="passenger"
+    />
+
+    <!-- Main congested route -->
+    <route
+        id="main_route"
+        edges="A0A1 A1B1 B1B2 B2C2"
+    />
+
+    <!-- Separate alternative corridor -->
+    <route
+        id="alternative_route"
+        edges="A0B0 B0C0 C0C1 C1C2"
+    />
+
+    <!-- Heavy traffic on main route -->
+    <flow
+        id="main_traffic"
+        type="car"
+        route="main_route"
+        begin="0"
+        end="600"
+        vehsPerHour="1800"
+    />
+
+    <!-- Initial traffic on alternative route -->
+    <flow
+        id="alternative_traffic"
+        type="car"
+        route="alternative_route"
+        begin="0"
+        end="600"
+        vehsPerHour="150"
+    />
+
+</routes>

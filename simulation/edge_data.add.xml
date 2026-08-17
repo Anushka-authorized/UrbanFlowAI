@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<additional>
+    <edgeData
+        id="trafficData"
+        file="edge_data.xml"
+        begin="0"
+        end="300"
+        period="60"
+        excludeEmpty="true"/>
+</additional>

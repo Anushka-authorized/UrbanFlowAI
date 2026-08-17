@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <input>
+        <net-file value="network.net.xml"/>
+        <route-files value="bottleneck.rou.xml"/>
+        <additional-files value="edge_data.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="bottleneck_tripinfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="600"/>
+    </time>
+
+</configuration>

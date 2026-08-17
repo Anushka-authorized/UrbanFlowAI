@@ -1,0 +1,24 @@
+# Python
+backend/venv/
+__pycache__/
+*.pyc
+
+# Next.js
+frontend/node_modules/
+frontend/.next/
+
+# Environment
+.env
+.env.local
+
+# VS Code
+.vscode/
+
+# Generated SUMO results
+simulation/*tripinfo*.xml
+simulation/auto_result_*.xml
+simulation/test_*.rou.xml
+simulation/auto_test.sumocfg
+
+# Python cache
+*.pyo

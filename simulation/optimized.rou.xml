@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<routes>
+
+    <vType id="car" vClass="passenger" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="13.9" guiShape="passenger" />
+
+    
+    <route id="main_route" edges="A0A1 A1B1 B1B2 B2C2" />
+
+    
+    <route id="alternative_route" edges="A0B0 B0C0 C0C1 C1C2" />
+
+    
+    <flow id="main_traffic" type="car" route="main_route" begin="0" end="600" vehsPerHour="1500" />
+
+    
+    <flow id="alternative_traffic" type="car" route="alternative_route" begin="0" end="600" vehsPerHour="450" />
+
+</routes>
